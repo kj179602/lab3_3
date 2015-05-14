@@ -1,5 +1,8 @@
 package edu.iis.mto.time;
 
-public interface DateTimeSource {
+import org.joda.time.DateTime;
 
+
+public interface DateTimeSource {
+	DateTime getDateTime();
 }
