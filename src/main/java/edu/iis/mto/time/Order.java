@@ -11,9 +11,15 @@ public class Order {
 	private State orderState;
 	private List<OrderItem> items = new ArrayList<OrderItem>();
 	private DateTime subbmitionDate;
+	public DateTime date;
 
 	public Order() {
 		orderState = State.CREATED;
+		date = new DateTime();
+	}
+	public Order(DateTime date){
+		orderState = State.CREATED;
+		this.date = date;
 	}
 
 	public void addItem(OrderItem item) {
